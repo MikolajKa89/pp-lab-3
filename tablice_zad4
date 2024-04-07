@@ -1,24 +1,24 @@
-package mainpackage;
+pakiet pakietglowny;
 
-import geometry.Circle;
-import geometry.ColoredCircle;
+import geometria.Kolo;
+import geometria.KolowyKolorowy;
 
-public class Main {
+public class Glowna {
     public static void main(String[] args) {
-        // Tworzenie tablicy  Circle i ColoredCircle
-        Circle[] circles = new Circle[3];
-        circles[0] = new Circle(3.0);
-        circles[1] = new ColoredCircle(5.0, "blue");
-        circles[2] = new Circle(2.5);
+        // Tworzenie tablicy Circle i ColoredCircle
+        Kolo[] kola = new Kolo[3];
+        kola[0] = new Kolo(3.0);
+        kola[1] = new KolowyKolorowy(5.0, "niebieski");
+        kola[2] = new Kolo(2.5);
 
-        // Iteracja po tablicy y calculateArea()
-        for (Circle circle : circles) {
-            System.out.println("Area: " + circle.calculateArea());
+        // Iteracja po tablicy i calculateArea()
+        for (Kolo kolo : kola) {
+            System.out.println("Pole: " + kolo.obliczPole());
             
-            // Jeśli obiekt jest instancją ColoredCircle,  getColor()
-            if (circle instanceof ColoredCircle) {
-                ColoredCircle coloredCircle = (ColoredCircle) circle;
-                System.out.println("Color: " + coloredCircle.getColor());
+            // Jeśli obiekt jest instancją KolowyKolorowy, wywołaj pobierzKolor()
+            if (kolo instanceof KolowyKolorowy) {
+                KolowyKolorowy kolowyKolorowy = (KolowyKolorowy) kolo;
+                System.out.println("Kolor: " + kolowyKolorowy.pobierzKolor());
             }
         }
     }
