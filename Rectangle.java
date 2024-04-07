@@ -1,27 +1,27 @@
 package geometry;
 
-public class Rectangle {
-    private double length;
-    private double width;
+public class Prostokat {
+    private double dlugosc;
+    private double szerokosc;
 
-    public Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
+    public Prostokat(double dlugosc, double szerokosc) {
+        this.dlugosc = dlugosc;
+        this.szerokosc = szerokosc;
     }
 
-    public double calculateArea() {
-        return length * width;
+    public double obliczPole() {
+        return dlugosc * szerokosc;
     }
 
-    public double calculatePerimeter() {
-        return 2 * (length + width);
+    public double obliczObwod() {
+        return 2 * (dlugosc + szerokosc);
     }
 
-    public double getLength() {
-        return length;
+    public double getDlugosc() {
+        return dlugosc;
     }
 
-    public double getWidth() {
-        return width;
+    public double getSzerokosc() {
+        return szerokosc;
     }
 }
