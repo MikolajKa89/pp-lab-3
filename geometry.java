@@ -1,14 +1,14 @@
-package geometry;
+pakiet geometria;
 
-public class ColoredCircle extends Circle {
-    private String color;
+public class KolowyKolorowy extends Kolo {
+    private String kolor;
 
-    public ColoredCircle(double radius, String color) {
-        super(radius);
-        this.color = color;
+    public KolowyKolorowy(double promien, String kolor) {
+        super(promien);
+        this.kolor = kolor;
     }
 
-    public String getColor() {
-        return color;
+    public String pobierzKolor() {
+        return kolor;
     }
 }
